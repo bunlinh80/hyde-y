@@ -1,0 +1,132 @@
+/* html {
+  background: #FAF7F2;
+  background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+} */
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-clearfix {
+  *zoom: 1;
+}
+
+.subtle {
+  color: @headings-1-color;
+}
+
+.card-container {
+  margin: 25px auto 0;
+  position: relative;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+.card {
+  background-color: @secondary-background;
+  position: relative;
+  z-index: 1;
+}
+
+
+// titlebox stuff
+.card-title-block {
+  background-color: @primary-background;
+  display: inline-block;
+  width: 100%;
+  color: @secondary-background;
+  padding: 10px 10px 10px 25px;
+}
+
+.card-title {
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-size: 40px; */
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px 0;
+  color: @secondary-background;
+
+  &:hover {
+    color: @secondary-color;
+  }
+
+}
+
+.card-author {
+  display: block;
+  margin: 15px 0 0;
+  // text-transform: uppercase;
+
+  > a {
+    color: @secondary-background;
+
+    &:hover {
+      color: @secondary-color;
+    }
+  }
+}
+
+// body stuff
+.card-body {
+  display: inline-block;
+  float: left;
+  width: 310px;
+  padding: 30px;
+}
+
+.card-body-only {
+  display: inline-block;
+  float: left;
+  padding: 1.7% 1.7% 0% 3.5%;
+  width: 100%
+  /* width: 310px; */
+}
+
+.card-description {
+  display: inline-block;
+  width: 100%
+}
+
+.card-asset {
+  cursor: pointer;
+  font-size: @base-font-size;
+  letter-spacing: 2px;
+  margin: 5px 0 20px;
+  position: relative;
+  text-align: right;
+}
+
+.card-asset:after {
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 9px;
+  width: 75%;
+}
+
+.card-paper:after {
+  background-color: #212121;
+}
+
+.card-slides:after {
+  background-color: #212121;
+}
+
+.card-code:after {
+  background-color: #212121;
+}
+
+.card-repo:after {
+  background-color: #212121;
+}
