@@ -3,8 +3,8 @@
   <header class="container">
     {{ partial "bloc/content/h1-title" . }}
   </header>
-  {{ range $index, .Paginator.Pages }}
-    {{ .Render "section.li" }}
+  {{ range $index, $page := .Paginator.Pages }}
+  {{ .Render "section.li" }}
   {{ end }}
   {{ partial "bloc/content/pagination" . }}
 </section>
