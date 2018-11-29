@@ -1,4 +1,13 @@
-{{ with .Site.Params.github }}
+<!-- {{ with .Site.Params.github }}
 <a id="contact-link-github" class="contact_link" href="https://github.com/{{ . }}">
   <span class="fa fa-github-square"></span><span>github</span></a>
+{{ end }} -->
+<!-- {{ with .Site.Params.github }}
+<a id="contact-link-github" class="contact_link" href="https://github.com/{{ . }}">
+  <i class="fa fa-github pr-1"></i> Github</button></a>
+{{ end }} -->
+{{ with .Site.Params.github }}
+<a id="contact-link-github" class="contact_link" href="https://github.com/{{ . }}">
+  <i class="fa fa-github-square"></i> Github</button></a>
 {{ end }}
+

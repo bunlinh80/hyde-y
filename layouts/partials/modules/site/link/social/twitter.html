@@ -1,4 +1,8 @@
-{{ with .Site.Params.twitter }}
+<!-- {{ with .Site.Params.twitter }}
 <a id="contact-link-twitter" class="contact_link" href="https://twitter.com/{{ . }}">
   <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+{{ end }} -->
+{{ with .Site.Params.twitter }}
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/{{ . }}">
+  <i class="fa fa-twitter-square"></i> Twitter</button></a>
 {{ end }}

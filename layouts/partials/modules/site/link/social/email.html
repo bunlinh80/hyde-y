@@ -1,4 +1,8 @@
-{{ with .Site.Author.email }}
+<!-- {{ with .Site.Author.email }}
 <a id="contact-link-email" class="contact_link" href="mailto:{{ . }}">
   <span class="fa fa-envelope-square"></span><span>email</span></a>
+{{ end }} -->
+{{ with .Site.Author.email }}
+<a id="contact-link-email" class="contact_link" href="mailto:{{ . }}">
+<i class="fa fa-envelope-square"></i> Email</button></a>
 {{ end }}
